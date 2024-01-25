@@ -308,4 +308,9 @@ nav {
         flex-direction: column;
         text-align: center;
     }
+
+    .contacto__figure iframe{
+        width: 200px;
+        height: 200px;
+    }
 }
