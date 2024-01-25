@@ -161,6 +161,48 @@ nav {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */ 
 }
 
+/*Estilos productos*/
+.productos__h1{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 2px solid var(--border);
+}
+.productos__article {
+    width: 90%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.productos__target {
+    text-align: center;
+}
+
+.productos__img{
+    width: 100%;
+}
+
+.productos__cta{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--bg-principal);
+    padding: 15px 20px;
+    margin-top: 1rem;
+}
+
+/* Estilos de contacto */
+.contacto{
+    width: 90%;
+    margin: 4rem auto;
+
+    display: flex;
+    gap: 1rem;
+}
+
+
 /* Estilos del pie de página */
 
 .footer{
@@ -182,7 +224,8 @@ nav {
 
 .footer__img{
     width: 36px;
-    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .footer__social{
@@ -255,5 +298,14 @@ nav {
     .footer__h1{
         margin-top: 1rem;
         font-size: 1rem;
+    }
+
+    .productos__article {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto{
+        flex-direction: column;
+        text-align: center;
     }
 }
